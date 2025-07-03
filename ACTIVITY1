@@ -1,0 +1,61 @@
+CREATE TABLE books (
+book_id INT(50),
+book_title VARCHAR(150),
+ISBN INT(20),
+publication_date DATE,
+price INT(100)
+  );
+
+
+
+CREATE TABLE book_authors (
+  book_id INT(50),
+  author_id INT(50)
+  );
+
+
+CREATE TABLE patients (
+patient_id INT(50),
+first_name VARCHAR(100),
+last_name VARCHAR(100),
+birth_date DATE,
+phone_number INT(50),
+record_date DATE
+);
+
+CREATE TABLE doctors (
+doctor_id INT(50),
+first_name VARCHAR(100),
+last_name VARCHAR(100),
+medical_specialty TEXT,
+licensed_date INT
+);
+
+CREATE TABLE appointment (
+appointment_id INT(50),
+doctor_id INT(50),
+patient_id INT(50),
+reason_visit TEXT,
+appointment_status ENUM('Scheduled', 'Completed', 'Canceled', 'No-Show') NOT NULL
+);
+
+CREATE TABLE departments (
+department_id INT(50),
+deparment_name VARCHAR(200),
+office_location VARCHAR(500)
+);
+
+CREATE TABLE courses (
+course_id INT(50),
+deparment_name VARCHAR(200),
+office_location VARCHAR(500)
+);
+
+
+ git clone https://github.com/mangelosalvio/CPETE401-AY2526
+
+ C:\Users\2121418
+
+ cd C:\Users\2121418\Documents
+
+ https://github.com/KyzhaAnne/CPETE401-AY2526_TORRES.git
