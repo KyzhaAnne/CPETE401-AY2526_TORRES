@@ -52,6 +52,17 @@ office_location VARCHAR(500)
 );
 
 
+CREATE TABLE courses (
+course_id INT(50),
+course_code VARCHAR(50),
+course_title VARCHAR(200),
+course_credit INT(50),
+department_id INT(50),
+deparment_name VARCHAR(200),
+);
+
+
+
  git clone https://github.com/mangelosalvio/CPETE401-AY2526
 
  C:\Users\2121418
