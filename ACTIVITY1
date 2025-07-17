@@ -1,3 +1,20 @@
+Problem 1: Online Bookstore Inventory
+
+CREATE TABLE authors (
+  author_id INT(50),
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  biography TEXT,
+  birth_date DATE
+);
+
+CREATE TABLE publishers (
+  publisher_id INT(50),
+  name VARCHAR(200),
+  country VARCHAR(100)
+);
+
+
 CREATE TABLE books (
 book_id INT(50),
 book_title VARCHAR(150),
@@ -6,12 +23,14 @@ publication_date DATE,
 price INT(100)
   );
 
-
-
 CREATE TABLE book_authors (
   book_id INT(50),
   author_id INT(50)
   );
+
+
+
+Problem 2: Clinic Appointment System
 
 
 CREATE TABLE patients (
@@ -39,18 +58,14 @@ reason_visit TEXT,
 appointment_status ENUM('Scheduled', 'Completed', 'Canceled', 'No-Show') NOT NULL
 );
 
+
+Problem 3: University Course Catalog
+
 CREATE TABLE departments (
 department_id INT(50),
 deparment_name VARCHAR(200),
 office_location VARCHAR(500)
 );
-
-CREATE TABLE courses (
-course_id INT(50),
-deparment_name VARCHAR(200),
-office_location VARCHAR(500)
-);
-
 
 CREATE TABLE courses (
 course_id INT(50),
